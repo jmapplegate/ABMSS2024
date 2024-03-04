@@ -15,7 +15,7 @@ def create_firm(omega_0, p_0):
 
 def create_households(n, H_max, rng):
     #alphas = rng.uniform(0, 1, n)
-    alphas = rng.uniform(.1, .9, n)
+    alphas = rng.uniform(.1, .5, n)
     betas = 1 - alphas
     H_N = np.zeros(n)
     H_O = np.zeros(n)

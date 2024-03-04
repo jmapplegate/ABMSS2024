@@ -8,7 +8,7 @@ def tribute_hours(p, S_N, omega, m):
 
 def optional_hours(beta, alpha, H_max, omega, m, p, S_N):
     #only excess m to p*S_N counts in optional hours
-    return max(0, beta * H_max - alpha / omega * max(0, (m - p * S_N)))
+    return max(0, beta * H_max - alpha / omega * (m - p * S_N))
 
 def plan_consumption(S_N, omega, p, hours, m):
     income = hours * omega
